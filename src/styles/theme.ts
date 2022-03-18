@@ -13,6 +13,9 @@ export const theme = extendTheme({
       "400": "#FFBA08",
       "300": "rgba(255, 186, 8,0.5)",
     },
+    pink: {
+      "700": "##EF4290",
+    },
   },
   fonts: {
     heading: "Poppins",
