@@ -3,7 +3,7 @@ import { Flex, Grid, Image } from "@chakra-ui/react";
 export default function Header() {
   return (
     <Flex
-      bg="white"
+      bg="gray.100"
       w="100%"
       as="header"
       mx="auto"
