@@ -27,13 +27,19 @@ export default function Banner() {
             O Universo, <br />
             infinitas possibilidades.
           </Heading>
-          <Text color="yellow.400" fontWeight="700" mt="5" fontSize={["0.8rem", "xl"]} maxW={["90%", "90%", "80%", "550px"]}>
-            Já pensou em fazer um mochilão pelas galáxias?
-            Não entre em pânico, pegue sua toalha e vamos!
+          <Text
+            color="yellow.400"
+            fontWeight="700"
+            mt="5"
+            fontSize={["0.8rem", "xl"]}
+            maxW={["90%", "90%", "80%", "550px"]}
+          >
+            Já pensou em fazer um mochilão pelas galáxias? Não entre em pânico,
+            pegue sua toalha e vamos!
           </Text>
         </div>
 
-        <Image 
+        <Image
           w={["220px", "220px", "220px", "350px"]}
           display={["none", "none", "block"]}
           mx={["1rem", "1rem"]}
