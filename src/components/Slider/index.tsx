@@ -3,7 +3,7 @@ import { Flex, Heading, Link, Text } from "@chakra-ui/react";
 import SwiperCore, { Navigation, Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// SwiperCore.use([Navigation, Pagination, A11y])
+SwiperCore.use([Navigation, Pagination, A11y])
 
 export default function Slider() {
   return (
@@ -15,7 +15,6 @@ export default function Slider() {
       h={["250px", "450px"]}
     >
       <Swiper
-        modules={[Navigation, Pagination, A11y]}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
@@ -40,9 +39,12 @@ export default function Slider() {
             <Link href="/improbility/place">
               <a>
                 <Heading
+                  fontSize={["3xl", "4xl", "5xl"]}
+                  fontWeight="bold"
                   bgColor="gray.800"
                   color="yellow.400"
-                  p="1"
+                  // p="1"
+                  pt={["2", "4"]}
                   px="4"
                   borderTopLeftRadius="8"
                   borderTopRightRadius="8"
@@ -50,9 +52,59 @@ export default function Slider() {
                   Magrathea
                 </Heading>
                 <Text
+                  fontWeight="bold"
+                  fontSize={["0.8rem", "1xl", "2xl"]}
                   bgColor="gray.800"
                   color="yellow.400"
-                  p="1"
+                  // p="1"
+                  pt={["2", "4"]}
+                  pb={["2", "4"]}
+                  px="4"
+                  borderBottomRightRadius="8"
+                  borderBottomLeftRadius="8"
+                >
+                  Indústria especializada em construção de planetas
+                </Text>
+              </a>
+            </Link>
+          </Flex>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Flex
+            w="100%"
+            h="100%"
+            align="center"
+            justify="center"
+            direction="column"
+            bgImage="url(/magrathea.png)"
+            bgRepeat="no-repeat"
+            bgSize="cover"
+            textAlign="center"
+            bgPosition="center"
+          >
+            <Link href="/improbility/place">
+              <a>
+                <Heading
+                  fontSize={["3xl", "4xl", "5xl"]}
+                  fontWeight="bold"
+                  bgColor="gray.800"
+                  color="yellow.400"
+                  // p="1"
+                  pt={["2", "4"]}
+                  px="4"
+                  borderTopLeftRadius="8"
+                  borderTopRightRadius="8"
+                >
+                  Magrathea-1
+                </Heading>
+                <Text
+                  fontWeight="bold"
+                  fontSize={["0.8rem", "1xl", "2xl"]}
+                  bgColor="gray.800"
+                  color="yellow.400"
+                  // p="1"
+                  pt={["2", "4"]}
+                  pb={["2", "4"]}
                   px="4"
                   borderBottomRightRadius="8"
                   borderBottomLeftRadius="8"

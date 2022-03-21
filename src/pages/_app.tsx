@@ -3,12 +3,12 @@ import {AppProps} from "next/app"
 import { theme } from "../styles/theme"
 
 // Import Swiper styles
-import 'swiper/core';
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
 
-// import "../styles/slider.scss";
+import "../styles/slider.scss"
 
 function App({ Component, pageProps }: AppProps) {
   return (
