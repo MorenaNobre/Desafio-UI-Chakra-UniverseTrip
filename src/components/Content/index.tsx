@@ -1,4 +1,5 @@
 import { Grid, Text } from "@chakra-ui/react";
+import Infos from "./infos";
 
 export default function Content() {
   return (
@@ -18,10 +19,9 @@ export default function Content() {
         levando com ele importantes informações de seu povo.
         Contrariado com tal atitude, o General Zod tenta impedir a iniciativa e 
         acaba preso. Já em seu novo lar, a criança foi criada por Jonathan e 
-        Martha Kent, que passaram a chamá-lo de Clark. O tempo passa, seus 
-        poderes vão aparecendo e se tornando, de certa forma, um problema, 
-        porque isso evidencia que ele não é um ser humano.
+        Martha Kent, que passaram a chamá-lo de Clark.
       </Text>
+      <Infos />
     </Grid>
   );
 }
