@@ -36,7 +36,7 @@ export default function Slider() {
             textAlign="center"
             bgPosition="center"
           >
-            <Link href="/improbility/place">
+            <Link href="/destination/place">
               <a>
                 <Heading
                   fontSize={["3xl", "4xl", "5xl"]}
@@ -82,14 +82,14 @@ export default function Slider() {
             textAlign="center"
             bgPosition="center"
           >
-            <Link href="/improbility/place">
+            <Link href="/destination/place">
               <a>
                 <Heading
                   fontSize={["3xl", "4xl", "5xl"]}
                   fontWeight="bold"
-                  bgColor="gray.800"
                   color="yellow.400"
                   // p="1"
+                  bgColor="gray.800"
                   pt={["2", "4"]}
                   px="4"
                   borderTopLeftRadius="8"
