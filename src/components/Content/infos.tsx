@@ -50,7 +50,7 @@ export default function Infos() {
           77
         </Heading>
         <Text fontSize={["md", "xl"]} fontWeight="600" color="gray.700">
-          galáxias +371
+          galáxias +616
           <Popover>
             <PopoverTrigger>
               <span>

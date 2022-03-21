@@ -2,6 +2,7 @@ import { Flex } from "@chakra-ui/react";
 import Content from "../../components/Content";
 import DestinationBanner from "../../components/DestinationBanner";
 import Header from "../../components/Header";
+import Galaxys from "../../components/Galaxys";
 
 export default function Destination() {
   return (
@@ -16,6 +17,7 @@ export default function Destination() {
         px="1rem"
       >
         <Content />
+        <Galaxys />
       </Flex>
     </Flex>
   );
