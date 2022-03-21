@@ -7,7 +7,7 @@ export default function DestinationBanner() {
       h={["150px", "300px", "500px"]}
       px={["0", "0", "36"]}
       pt={["0", "0", "72"]}
-      bgImage="url(/iron-planet.png)"
+      bgImage="url(/krypton-ruinas.png)"
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"
@@ -25,7 +25,7 @@ export default function DestinationBanner() {
         px="4"
         borderRadius="8"
       >
-        Iron Planet
+        Krypton (Ruínas)
       </Heading>
     </Flex>
   );
