@@ -11,8 +11,9 @@ import {
   PopoverBody
 } from "@chakra-ui/react";
 import { RiInformationLine } from "react-icons/ri";
+import { GalaxyProps } from "../../pages/destination/[slug]";
 
-export default function Infos() {
+export default function Infos({galaxy} : GalaxyProps) {
   return (
     <Flex align="center" justifyContent="space-between">
       <Flex
@@ -21,10 +22,10 @@ export default function Infos() {
         align={["flex-start", "flex-star", "center"]}
       >
         <Heading fontSize={["2xl", "5xl"]} color="yellow.400" fontWeight="500">
-          1042
+          {galaxy.galaxys}
         </Heading>
         <Text fontSize={["md", "xl"]} fontWeight="600" color="gray.700">
-          planetas
+          {galaxy.planets}
         </Text>
       </Flex>
 
@@ -68,7 +69,7 @@ export default function Infos() {
               <PopoverArrow bg="gray.700"/>
               <PopoverCloseButton />
               <PopoverBody fontWeight="400" fontSize="lg">
-                Asgard, Alfheim, Muspelheim, Torfa, Aakon
+                {galaxy.planets_list}
               </PopoverBody>
             </PopoverContent>
           </Popover>

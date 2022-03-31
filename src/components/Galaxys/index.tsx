@@ -1,7 +1,8 @@
 import { Grid, Heading } from "@chakra-ui/react";
+import { GalaxyProps } from "../../pages/destination/[slug]";
 import Galaxy from "./Galaxy";
 
-export default function Galaxys() {
+export default function Galaxys({ galaxy }: GalaxyProps) {
   return (
     <>
       <Heading fontWeight="500" fontSize={["2xl", "4xl"]} mb="10">
@@ -14,14 +15,15 @@ export default function Galaxys() {
         justifyContent="center"
         px={["30px", "0"]}
       >
-        <Galaxy />
-        <Galaxy />
-        <Galaxy />
-        <Galaxy />
-        <Galaxy />
-        <Galaxy />
-        <Galaxy />
-        <Galaxy />
+        {galaxy.galaxys616.map((galaxy) => (
+          <Galaxy
+            key={galaxy.galaxy}
+            name={galaxy.galaxy}
+            planet={galaxy.planet}
+            flag={galaxy.flag}
+            image={galaxy.thumbnail}
+          />
+        ))}
       </Grid>
     </>
   );

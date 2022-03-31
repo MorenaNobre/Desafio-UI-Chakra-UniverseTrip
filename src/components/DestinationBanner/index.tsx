@@ -1,13 +1,14 @@
 import { Flex, Heading } from "@chakra-ui/react";
+import { GalaxyProps } from "../../pages/destination/[slug]";
 
-export default function DestinationBanner() {
+export default function DestinationBanner({ galaxy }: GalaxyProps) {
   return (
     <Flex
       w="100%"
       h={["150px", "300px", "500px"]}
       px={["0", "0", "36"]}
       pt={["0", "0", "72"]}
-      bgImage="url(/krypton-ruinas.png)"
+      bgImage={`url('${galaxy.banner_image}')`}
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"
@@ -25,7 +26,7 @@ export default function DestinationBanner() {
         px="4"
         borderRadius="8"
       >
-        Krypton (Ruínas)
+        {galaxy.title}
       </Heading>
     </Flex>
   );

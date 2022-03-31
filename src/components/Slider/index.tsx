@@ -25,7 +25,7 @@ export default function Slider({ galaxys }: GalaxyProps) {
         style={{ width: "100%", flex: "1" }}
       >
        {galaxys.map(galaxy => (
-          <SwiperSlide>
+          <SwiperSlide key={galaxy.title}>
           <Flex
             w="100%"
             h="100%"

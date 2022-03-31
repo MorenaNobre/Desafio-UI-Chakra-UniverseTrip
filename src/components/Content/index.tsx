@@ -1,7 +1,8 @@
 import { Grid, Text } from "@chakra-ui/react";
+import { GalaxyProps } from "../../pages/destination/[slug]";
 import Infos from "./infos";
 
-export default function Content() {
+export default function Content({ galaxy }: GalaxyProps) {
   return (
     <Grid
       templateColumns={["1fr", "1fr", "1fr 1fr", "1.2fr 1fr"]}
@@ -13,15 +14,9 @@ export default function Content() {
         color="gray.700"
         textAlign="justify"
       >
-        Nascido em Krypton, o pequeno Kal-El viveu pouco tempo em seu planeta
-        natal. Percebendo que o planeta estava prestes a entrar em colapso, seu
-        pai o envia ainda bebê em uma nave espacial, rumo ao planeta Terra, e 
-        levando com ele importantes informações de seu povo.
-        Contrariado com tal atitude, o General Zod tenta impedir a iniciativa e 
-        acaba preso. Já em seu novo lar, a criança foi criada por Jonathan e 
-        Martha Kent, que passaram a chamá-lo de Clark.
+        {galaxy.description}
       </Text>
-      <Infos />
+      <Infos galaxy={galaxy}/>
     </Grid>
   );
 }
